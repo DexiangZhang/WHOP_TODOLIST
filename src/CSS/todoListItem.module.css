@@ -1,0 +1,148 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 3.75rem;
+  border: 0.75px solid #ececec;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.item:hover {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.item:active {
+  background: #f4f4f4;
+
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.item > svg {
+  padding: 0.875rem 0.438rem 0.875rem 0.438rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.link,
+.link:visited {
+  color: #242424;
+}
+
+.item > svg:hover {
+  background: #f4f4f4;
+  border-radius: 4px;
+}
+
+.item > svg:active {
+  background: #f4f4f4;
+  border-radius: 4px;
+}
+
+.item > svg > path:active {
+  fill: #2fe6ff !important;
+}
+
+.title {
+  margin-left: 1rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+  margin-top: -1.355rem;
+  margin-right: 1rem;
+}
+
+.space {
+  visibility: hidden;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  border: 0.75px solid #ececec;
+  box-sizing: border-box;
+  background: #c4c4c4;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  background: #ffffff;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.005rem;
+
+  color: #242424;
+}
+
+.options > a {
+  text-decoration: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.options > a:hover {
+  background: #f4f4f4;
+  border-radius: 6px;
+}
+
+.link:active path,
+.link:active {
+  fill: #2fe6ff;
+  color: #2fe6ff;
+  background: #f4f4f4;
+  border-radius: 6px;
+}
+
+.options > a > svg {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.options > a > span {
+  padding-right: 1rem;
+  vertical-align: middle;
+}
+
+.options > div > svg {
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.options > div > .removeTxT {
+  padding-right: 1rem;
+  vertical-align: middle;
+}
+
+.options > div:hover {
+  background: #f4f4f4;
+  border-radius: 6px;
+}
+
+.options > div:active path,
+.options > div:active {
+  fill: #ff3333;
+  color: #ff3333;
+  background: #f4f4f4;
+  border-radius: 6px;
+}
+
+.options > div {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}

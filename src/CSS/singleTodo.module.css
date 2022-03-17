@@ -1,0 +1,116 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.backButton > svg {
+  margin-left: 2.5rem;
+  vertical-align: middle;
+}
+
+.backButton > span {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.005rem;
+  color: #505050;
+  margin-left: 0.25rem;
+  vertical-align: middle;
+}
+
+.backButton,
+.backButton:visited span {
+  color: #505050;
+}
+
+.backButton:hover span {
+  color: #242424;
+}
+.backButton:active path,
+.backButton:active span {
+  fill: #2fe6ff;
+  color: #2fe6ff;
+}
+
+.header > a {
+  text-decoration: none;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  margin-right: 2.5rem;
+}
+
+textarea {
+  padding: 0;
+  border: none;
+  outline: none;
+
+  height: 100vh;
+  resize: none;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.75rem;
+  line-height: 2.75rem;
+  letter-spacing: -0.01rem;
+  color: #242424;
+
+  caret-color: #2fe6ff;
+
+  width: -moz-available; /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+  width: stretch;
+
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+::placeholder {
+  opacity: 0.2;
+  color: #242424;
+}
+
+.link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+
+  text-align: right;
+  letter-spacing: -0.005rem;
+}
+
+.link,
+.link:visited {
+  color: #505050;
+}
+
+.link:hover {
+  color: #242424;
+}
+
+.link:active {
+  color: #2fe6ff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1039px) {
+  .backButton > svg {
+    margin-left: 1.5rem;
+  }
+
+  .header > a {
+    margin-right: 1.5rem;
+  }
+
+  textarea {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
